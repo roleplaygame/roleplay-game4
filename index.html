@@ -177,12 +177,12 @@
             femaleTasksDiv.innerHTML = '<h2 class="task-title" style="color:#ff69b4">女生任务</h2>';
             
             // 随机排序任务数组
-            const shuffledMaleTasks = [...maleTasks].sort(() => 0.5 - Math.random());
-            const shuffledFemaleTasks = [...femaleTasks].sort(() => 0.5 - Math.random());
+            const shuffledMaleTasks = [...maleTasks].sort(() => 0.1 - Math.random());
+            const shuffledFemaleTasks = [...femaleTasks].sort(() => 0.1 - Math.random());
             
-            // 各选取5个任务
-            const selectedMaleTasks = shuffledMaleTasks.slice(0, 5);
-            const selectedFemaleTasks = shuffledFemaleTasks.slice(0, 5);
+            // 各选取1个任务
+            const selectedMaleTasks = shuffledMaleTasks.slice(0, 1);
+            const selectedFemaleTasks = shuffledFemaleTasks.slice(0, 1);
             
             // 添加男生任务
             selectedMaleTasks.forEach(task => {
